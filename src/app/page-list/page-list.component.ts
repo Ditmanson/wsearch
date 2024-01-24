@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Search } from '../search';
+
+
 
 @Component({
   selector: 'app-page-list',
@@ -6,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './page-list.component.css'
 })
 export class PageListComponent {
-
+  @Input() pages: Search[] = [];
+ 
 }
