@@ -10,5 +10,6 @@ import { Search } from '../search';
 })
 export class PageListComponent {
   @Input() pages: Search[] = [];
+  xss = '<img src="" onerror="alert(1)" />';
  
 }
